@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Publications — Ruoyu Yin</title>
-<meta name="description" content="Publications of Ruoyu Yin — theoretical and experimental work on monitored quantum dynamics, first-detection and return times, restart, and quantum measurements." />
+<meta name="description" content="Publications of Ruoyu Yin, grouped by research theme: monitored quantum dynamics, quantum reset, repeated-measurement state preparation, and free-electron quantum optics." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -26,55 +26,100 @@
 
 <main id="main">
   <h1>Publications</h1>
-  <p class="lead muted">Physics is an experimental science, so I like to keep one foot in theory and one on real hardware — not an armchair strategist. Please find more details on <a href="https://scholar.google.com/citations?user=NU9sCTcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+  <p class="lead muted">A thematic guide to my papers, with representative schematics and short explanations of the ideas behind each direction. The full publication list and citation counts are available on <a href="https://scholar.google.com/citations?user=NU9sCTcAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
 
-  <h2>Theoretical work</h2>
-  <!-- <p class="muted small">When does a quantum particle <em>first</em> get detected? These papers build the theory of that question and the surprising role of restarting a search.</p> -->
+  <section class="theme" aria-labelledby="time-arrival">
+    <h2 id="time-arrival">Time of Arrival for Monitored Quantum Dynamics</h2>
+    <figure class="theme-figure">
+      <div class="figure-panels">
+        <div class="figure-panel figure-panel-wide">
+          <img src="assets/publications/time-of-arrival.png" alt="Repeated unitary evolution and measurements produce large fluctuations in first-detected quantum return times." loading="lazy" />
+        </div>
+        <div class="figure-panel">
+          <img src="assets/publications/winding.png" alt="Winding-number schematic associated with topological effects in monitored quantum walks." loading="lazy" />
+        </div>
+      </div>
+      <figcaption>Representative schematics: monitored quantum return protocol and large fluctuations (left), with the associated winding/topological structure (right).</figcaption>
+    </figure>
+    <p class="theme-intro">We use repeated strong measurements to monitor a quantum walker's first recurrence or arrival at a target state. On finite systems, the recurrence time shows a topological effect: its quantized jumps are accompanied by large fluctuations. This signature also extends to arrival problems, where the system can evade detection by entering dark states. Near the emergence of such states, the mean arrival time remains finite but can become gigantic. The repeated-measurement protocol provides an operational route to quantum time of arrival, can be implemented on quantum computers, and has led us to study finite-measurement effects in real devices.</p>
 
-  <div class="paper">
-    <div class="title"><a href="https://doi.org/10.1103/PhysRevResearch.1.033086" target="_blank" rel="noopener">Large fluctuations of the first detected quantum return time</a> <span class="es">★ Editors' Suggestion</span></div>
-    <div class="cite"><b>R. Yin</b>, K. Ziegler, F. Thiel, E. Barkai · Phys. Rev. Research <b>1</b>, 033086 (2019)</div>
-    <p class="gloss">If you keep asking a quantum particle "are you back where you started?", the time it first says yes can swing wildly from run to run. We show these fluctuations are not noise — they carry a topological fingerprint that jumps abruptly as the measurement rate is tuned.</p>
-  </div>
+    <div class="paper">
+      <div class="title"><a href="https://doi.org/10.1103/PhysRevResearch.1.033086" target="_blank" rel="noopener">Large fluctuations of the first detected quantum return time</a> <span class="tag">Editors' Suggestion</span></div>
+      <div class="cite"><b>R. Yin</b>, K. Ziegler, F. Thiel, E. Barkai · Phys. Rev. Research <b>1</b>, 033086 (2019)</div>
+    </div>
 
-  <div class="paper">
-    <div class="title"><a href="https://doi.org/10.1103/PhysRevResearch.2.033113" target="_blank" rel="noopener">Quantum walks: the mean first detected transition time</a></div>
-    <div class="cite">Q. Liu, <b>R. Yin</b>, K. Ziegler, E. Barkai · Phys. Rev. Research <b>2</b>, 033113 (2020)</div>
-    <p class="gloss">Here we ask how long, on average, until a monitored quantum walker is first found somewhere other than its starting point. A clean general formula emerges, and the mean time can even diverge — a behaviour we make intuitive by mapping it onto classical charges sitting on a disk.</p>
-  </div>
+    <div class="paper">
+      <div class="title"><a href="https://doi.org/10.1103/PhysRevResearch.2.033113" target="_blank" rel="noopener">Quantum walks: the mean first detected transition time</a></div>
+      <div class="cite">Q. Liu, <b>R. Yin</b>, K. Ziegler, E. Barkai · Phys. Rev. Research <b>2</b>, 033113 (2020)</div>
+    </div>
 
-  <div class="paper">
-    <div class="title"><a href="https://doi.org/10.1103/PhysRevLett.130.050802" target="_blank" rel="noopener">Restart expedites quantum walk hitting times</a></div>
-    <div class="cite"><b>R. Yin</b>, E. Barkai · Phys. Rev. Lett. <b>130</b>, 050802 (2023)</div>
-    <p class="gloss">Sometimes the fastest way to find something is to give up and start over. We show that restarting a quantum search removes "dark states" — configurations where the particle would otherwise never be found — and can dramatically speed up detection, a quantum take on the classical idea of resetting.</p>
-  </div>
+    <div class="paper">
+      <div class="title"><a href="https://doi.org/10.1103/PhysRevResearch.5.013202" target="_blank" rel="noopener">Quantum first detection of a quantum walker on a perturbed ring</a></div>
+      <div class="cite">Y. Wang, <b>R. Yin</b>, et al. · Phys. Rev. Research <b>5</b>, 013202 (2023)</div>
+    </div>
 
-  <div class="paper">
-    <div class="title"><a href="https://doi.org/10.1103/PhysRevResearch.5.013202" target="_blank" rel="noopener">Quantum first detection of a quantum walker on a perturbed ring</a></div>
-    <div class="cite">Y. Wang, <b>R. Yin</b>, et al. · Phys. Rev. Research <b>5</b>, 013202 (2023)</div>
-    <p class="gloss">Real systems are never perfect rings. We study how a single defect on the ring changes when — and whether — a quantum walker is detected, bridging the idealised theory and the imperfections of actual devices.</p>
-  </div>
+    <div class="paper">
+      <div class="title"><a href="https://doi.org/10.3390/e26100869" target="_blank" rel="noopener">First hitting times on a quantum computer: tracking vs. local monitoring, topological effects, and dark states</a> <span class="tag">Experiment</span></div>
+      <div class="cite">Q. Wang, S. Ren, <b>R. Yin</b>, K. Ziegler, E. Barkai, S. Tornow · Entropy <b>26</b>, 869 (2024)</div>
+    </div>
+  </section>
 
-  <div class="paper">
-    <div class="title"><a href="https://doi.org/10.1103/PhysRevE.109.064150" target="_blank" rel="noopener">Instability in the quantum restart problem</a></div>
-    <div class="cite"><b>R. Yin</b>, Q. Wang, E. Barkai · Phys. Rev. E <b>109</b>, 064150 (2024)</div>
-    <p class="gloss">Restart helps, but not always smoothly. We found that the best moment to restart can behave erratically — tiny changes in the parameters cause sudden jumps in the optimal strategy, an instability with no classical counterpart.</p>
-  </div>
+  <section class="theme" aria-labelledby="quantum-reset">
+    <h2 id="quantum-reset">Quantum Reset</h2>
+    <figure class="theme-figure">
+      <img src="assets/publications/quantum-reset.png" alt="Repeated measurements interrupted by a reset protocol for a monitored quantum walk." loading="lazy" />
+      <figcaption>Representative schematic: restarting a monitored quantum walk before unfavorable trajectories dominate.</figcaption>
+    </figure>
+    <p class="theme-intro">Dark states in repeated-measurement processes are induced by destructive interference. After successive failed measurements, a quantum system is increasingly likely to fall into a dark subspace and remain hidden from the detector. This resembles a classical random walker making excursions away from an absorbing boundary. Resetting can resolve this difficulty by interrupting unfavorable trajectories. The same idea appeared earlier in biochemical processes, such as unbinding in enzymatic reactions, and in computer science, where restart accelerates Las Vegas and combinatorial search algorithms. We bring this strategy into monitored quantum dynamics, both theoretically and experimentally.</p>
 
-  <h2>Experimental work</h2>
-  <p class="muted small">Theory is only half the story. These papers take the ideas onto real IBM quantum computers, where finite measurements, noise, and hardware reality put the predictions to the test.</p>
+    <div class="paper">
+      <div class="title"><a href="https://doi.org/10.1103/PhysRevLett.130.050802" target="_blank" rel="noopener">Restart expedites quantum walk hitting times</a></div>
+      <div class="cite"><b>R. Yin</b>, E. Barkai · Phys. Rev. Lett. <b>130</b>, 050802 (2023)</div>
+    </div>
 
-  <div class="paper">
-    <div class="title"><a href="https://doi.org/10.1073/pnas.2402912121" target="_blank" rel="noopener">Restart uncertainty relation for monitored quantum dynamics</a></div>
-    <div class="cite"><b>R. Yin</b>, Q. Wang, S. Tornow, E. Barkai · Proc. Natl. Acad. Sci. U.S.A. <b>122</b> (1), e2402912121 (2025)</div>
-    <p class="gloss">We derived a new time–energy uncertainty relation for repeatedly measured quantum systems — and then tested it on IBM quantum processors. Theory and hardware agreed, showing that the predicted "broadening" of sharp transitions is a real, observable effect rather than a paper curiosity.</p>
-  </div>
+    <div class="paper">
+      <div class="title"><a href="https://doi.org/10.1103/PhysRevE.109.064150" target="_blank" rel="noopener">Instability in the quantum restart problem</a></div>
+      <div class="cite"><b>R. Yin</b>, Q. Wang, E. Barkai · Phys. Rev. E <b>109</b>, 064150 (2024)</div>
+    </div>
 
-  <div class="paper">
-    <div class="title"><a href="https://doi.org/10.3390/e26100869" target="_blank" rel="noopener">First hitting times on a quantum computer: tracking vs. local monitoring, topological effects, and dark states</a></div>
-    <div class="cite">Q. Wang, S. Ren, <b>R. Yin</b>, K. Ziegler, E. Barkai, S. Tornow · Entropy <b>26</b>, 869 (2024)</div>
-    <p class="gloss">We measured first-hitting times directly on an IBM quantum computer. The experiment confirmed the predicted quantization, exposed the dark states that hide a walker from detection, and showed how using only a finite number of measurements smooths out the otherwise sharp theoretical transitions.</p>
-  </div>
+    <div class="paper">
+      <div class="title"><a href="https://doi.org/10.1073/pnas.2402912121" target="_blank" rel="noopener">Restart uncertainty relation for monitored quantum dynamics</a> <span class="tag">Experiment</span></div>
+      <div class="cite"><b>R. Yin</b>, Q. Wang, S. Tornow, E. Barkai · Proc. Natl. Acad. Sci. U.S.A. <b>122</b> (1), e2402912121 (2025)</div>
+    </div>
+
+    <div class="paper">
+      <div class="title"><a href="https://pubs.aip.org/aip/jcp/article/162/24/244114/3350798" target="_blank" rel="noopener">Resonances of recurrence time of monitored quantum walks</a></div>
+      <div class="cite"><b>R. Yin</b>, Q. Wang, S. Tornow, E. Barkai · J. Chem. Phys. <b>162</b>, 244114 (2025)</div>
+    </div>
+  </section>
+
+  <section class="theme" aria-labelledby="state-preparation">
+    <h2 id="state-preparation">Quantum State Preparation with Repeated Measurements</h2>
+    <figure class="theme-figure">
+      <img src="assets/publications/state-preparation.png" alt="Repeated non-local measurements filter a many-body Hilbert space toward a dark state." loading="lazy" />
+      <figcaption>Representative schematic: dark-state filtering through repeated non-local measurements.</figcaption>
+    </figure>
+    <p class="theme-intro">Here we turn dark states from an obstacle into a resource. In a repeated-measurement process, the dark state is a fixed point of the dissipative measurement map, similar in spirit to the steady state of a Lindbladian process. Because dark states can be superpositions of energy eigenstates, they can be engineered into controllable cat states. We show how such states can be prepared with multi-qubit Toffoli gates and post-selections for generic quantum chaotic many-body systems, even random matrices, using tools available on current quantum hardware.</p>
+
+    <div class="paper">
+      <div class="title"><a href="https://arxiv.org/abs/2507.00199" target="_blank" rel="noopener">Preparation of cat states in many-body eigenbasis via non-local measurement</a> <span class="tag">Preprint</span></div>
+      <div class="cite"><b>R. Yin</b>, H. Zhao · arXiv:2507.00199 (2025)</div>
+    </div>
+  </section>
+
+  <section class="theme" aria-labelledby="free-electron">
+    <h2 id="free-electron">Free-Electron Quantum Optics</h2>
+    <figure class="theme-figure">
+      <img src="assets/publications/free-electron-optics.png" alt="A twisted light wavefront creates a dispersion-free free-electron bound state with charge e over 2." loading="lazy" />
+      <figcaption>Representative schematic: a twisted light wavefront produces a flying topological half-electron state.</figcaption>
+    </figure>
+    <p class="theme-intro">Interacting with light that carries a twisted wave front, a low-energy free electron can form a topological bound state. The bound state is described by a Jackiw-Rebbi solution of the Dirac equation, with the mass term controlled by the light field. This gives a route to flying, dispersion-free electrons carrying quantum number e/2.</p>
+
+    <div class="paper">
+      <div class="title"><a href="https://arxiv.org/abs/2401.00723" target="_blank" rel="noopener">Free electron topological bound state induced by light beam with a twisted wavefront</a> <span class="tag">To be published</span></div>
+      <div class="cite">Y. Pan, <b>R. Yin</b>, Y. Ding, H. Wang, D. Podolsky, B. Zhang · arXiv:2401.00723</div>
+    </div>
+  </section>
 </main>
 
 <footer>
