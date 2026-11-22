@@ -200,3 +200,5 @@ footer{border-top:1px solid var(--line);}
 }
 .video-card figcaption b { display: block; margin-bottom: 2px; }
 a.tag { text-decoration: none; }
+
+.video-credit { font-size: 0.8rem; font-weight: 400; color: #777; margin-left: 4px; }
