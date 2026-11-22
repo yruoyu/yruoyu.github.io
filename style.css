@@ -205,17 +205,20 @@ a.tag { text-decoration: none; }
 
 .video-card.featured { grid-column: 1 / -1; }
 
-/* Video tags on the publications page: deep red */
-.paper .title a.tag {
-  background: transparent;
-  border: 1px solid #a51d2d;
-  color: #a51d2d;
+/* ---- Video tags (publications page) ---- */
+:root {
+  --video-tag-rgb: 165, 29, 45;  /* deep red, as R, G, B */
+  --video-tag-alpha: 0.15;       /* background opacity: 0 = clear, 1 = solid */
+  --video-tag-text: #a51d2d;     /* alpha <= 0.25: #a51d2d   |   alpha >= 0.8: #ffffff */
+}
+.paper .tag.tag-video {
+  background: rgba(var(--video-tag-rgb), var(--video-tag-alpha));
+  border: 1px solid rgba(var(--video-tag-rgb), 0.55);
+  color: var(--video-tag-text);
   text-decoration: none;
   font-weight: 500;
 }
-.paper .title a.tag:hover {
-  background: #7f1622;
-  border-color: #7f1622;
-  color: #ffffff;
+.paper .tag.tag-video:hover {
+  background: rgba(var(--video-tag-rgb), calc(var(--video-tag-alpha) + 0.12));
 }
 
