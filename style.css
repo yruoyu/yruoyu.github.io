@@ -202,3 +202,20 @@ footer{border-top:1px solid var(--line);}
 a.tag { text-decoration: none; }
 
 .video-credit { font-size: 0.8rem; font-weight: 400; color: #777; margin-left: 4px; }
+
+.video-card.featured { grid-column: 1 / -1; }
+
+/* Video tags on the publications page: deep red */
+.paper .title a.tag {
+  background: #a51d2d;
+  border-color: #a51d2d;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.paper .title a.tag:hover {
+  background: #7f1622;
+  border-color: #7f1622;
+  color: #ffffff;
+}
+
