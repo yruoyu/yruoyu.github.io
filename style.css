@@ -261,3 +261,13 @@ body.home main { max-width: var(--wide); padding-top: 34px; }
 .videos .video-card figcaption { margin-top: 8px; font-size: 13px; line-height: 1.5; }
 .videos .video-card figcaption b { display: block; margin-bottom: 2px; font-size: 14px; line-height: 1.4; }
 .videos .video-theme h3 { font-size: 15px; }
+
+/* ---- Icon links (homepage) ---- */
+.links-row.icons { gap: 10px; }
+.iconbtn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 42px; height: 42px;
+  border: 1px solid var(--line); border-radius: 50%;
+  color: var(--ink); font-size: 21px; line-height: 1;
+}
+.iconbtn:hover { border-color: var(--accent); color: var(--accent-dark); text-decoration: none; }
