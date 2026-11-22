@@ -222,3 +222,14 @@ a.tag { text-decoration: none; }
   background: rgba(var(--video-tag-rgb), calc(var(--video-tag-alpha) + 0.12));
 }
 
+
+/* ---- Wider homepage ---- */
+:root { --wide: 1080px; }
+.nav-inner, .foot-inner { max-width: var(--wide); }   /* same header/footer width on every page */
+body.home main { max-width: var(--wide); padding-top: 34px; }
+
+/* three videos side by side on wide screens */
+@media (min-width: 900px) {
+  body.home .video-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  body.home .video-card.featured { grid-column: auto; }
+}
