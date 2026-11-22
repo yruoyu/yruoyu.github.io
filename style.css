@@ -195,8 +195,8 @@ footer{border-top:1px solid var(--line);}
 }
 .video-card figcaption {
   margin-top: 8px;
-  font-size: 12.5px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1.5;
 }
 .video-card figcaption b { display: block; margin-bottom: 2px; font-size: 15px; }
 
@@ -256,3 +256,8 @@ body.home main { max-width: var(--wide); padding-top: 34px; }
 @media (min-width: 601px) {
   body.home .portrait { width: 240px; flex-basis: 240px; }
 }
+
+/* ---- Video captions: compact (keep at the very end) ---- */
+.videos .video-card figcaption { margin-top: 8px; font-size: 13px; line-height: 1.5; }
+.videos .video-card figcaption b { display: block; margin-bottom: 2px; font-size: 14px; line-height: 1.4; }
+.videos .video-theme h3 { font-size: 15px; }
