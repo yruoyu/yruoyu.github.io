@@ -201,10 +201,6 @@ footer{border-top:1px solid var(--line);}
 .video-card figcaption b { display: block; margin-bottom: 2px; }
 a.tag { text-decoration: none; }
 
-.video-credit { font-size: 0.8rem; font-weight: 400; color: #777; margin-left: 4px; }
-
-.video-card.featured { grid-column: 1 / -1; }
-
 /* ---- Video tags (publications page) ---- */
 :root {
   --video-tag-rgb: 165, 29, 45;  /* deep red, as R, G, B */
@@ -222,14 +218,22 @@ a.tag { text-decoration: none; }
   background: rgba(var(--video-tag-rgb), calc(var(--video-tag-alpha) + 0.12));
 }
 
-
 /* ---- Wider homepage ---- */
 :root { --wide: 1080px; }
 .nav-inner, .foot-inner { max-width: var(--wide); }   /* same header/footer width on every page */
 body.home main { max-width: var(--wide); padding-top: 34px; }
 
-/* three videos side by side on wide screens */
+/* ---- Videos grouped by theme (homepage) ---- */
+:root {
+  --lead-w: 1.3fr;   /* first video of a theme row: 1fr = same size as the others */
+  --solo-w: 38%;     /* a theme with a single video: video width, caption on the right */
+}
+.video-theme { margin: 4px 0 30px; }
+.video-theme h3 { margin: 0 0 12px; font-size: 16px; font-weight: 600; color: var(--muted); letter-spacing: .02em; }
 @media (min-width: 900px) {
-  body.home .video-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  body.home .video-card.featured { grid-column: auto; }
+  body.home .video-grid.trio { grid-template-columns: var(--lead-w) 1fr 1fr; align-items: start; }
+  body.home .video-grid.solo .video-card {
+    display: grid; grid-template-columns: var(--solo-w) minmax(0, 1fr); gap: 26px; align-items: center;
+  }
+  body.home .video-grid.solo figcaption { margin-top: 0; }
 }
