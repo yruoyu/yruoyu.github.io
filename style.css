@@ -207,9 +207,9 @@ a.tag { text-decoration: none; }
 
 /* Video tags on the publications page: deep red */
 .paper .title a.tag {
-  background: #a51d2d;
-  border-color: #a51d2d;
-  color: #ffffff;
+  background: transparent;
+  border: 1px solid #a51d2d;
+  color: #a51d2d;
   text-decoration: none;
   font-weight: 500;
 }
